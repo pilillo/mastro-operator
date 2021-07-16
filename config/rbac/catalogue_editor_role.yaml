@@ -1,0 +1,24 @@
+# permissions for end users to edit catalogues.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: catalogue-editor-role
+rules:
+- apiGroups:
+  - data-mill.cloud
+  resources:
+  - catalogues
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - data-mill.cloud
+  resources:
+  - catalogues/status
+  verbs:
+  - get

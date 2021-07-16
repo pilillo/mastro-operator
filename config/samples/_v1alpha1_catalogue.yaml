@@ -1,0 +1,7 @@
+apiVersion: data-mill.cloud/v1alpha1
+kind: Catalogue
+metadata:
+  name: catalogue-sample
+spec:
+  # Add fields here
+  foo: bar
